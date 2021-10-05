@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>me coder !</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">me coder! </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/project 1/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/project 1/about.html">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/project 1/webdev.html">Web development </a></li>
+                            <li><a class="dropdown-item" href="/project 1/appdev.html">App development </a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/project 1/contact.html">contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">login to ne coder </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">logIn </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!--signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">login to me coder</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">sign in </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="container py-3 py-lg-4">
+            <h2 class="text-center mb-4">me coder <span class="fw-light">about</span></h2>
+            <div class="row text-center pt-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?development" width="90" alt="Gulp icon">
+                    <h6>Kick-start Your Development</h6>
+                    <p class="fs-ms text-muted mb-0">Start your development process fast and easy with Node.js and Gulp
+                        setup. Configuration files are included in download package. Full tasks automation.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?sass icon" width="90" alt="Sass icon">
+                    <h6>Easy to Customize with Sass</h6>
+                    <p class="fs-ms text-muted mb-0">Cartzilla is built using Sass. Easily change colors, typography and
+                        much more. It is the most mature, stable, and powerful CSS extension language in the world.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?cartoon dog" width="90" alt="Pug icon">
+                    <h6>Pug - Node Templating Engine</h6>
+                    <p class="fs-ms text-muted mb-0">No need to write huge amount of HTML, if you don’t want to. Pug
+                        provides features not available in plain HTML like variables, includes, mixins, functions, etc.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?bootstrap" width="90" alt="Bootstrap icon">
+                    <h6>Built With Bootstrap 5</h6>
+                    <p class="fs-ms text-muted mb-0">Cartzilla is the powerful e-commerce front-end solution based on
+                        Bootstrap 5 - the world's most popular responsive, mobile-first front-end component library.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?components" width="90" alt="Web Components icon">
+                    <h6>40+ Flexible Components</h6>
+                    <p class="fs-ms text-muted mb-0">Besides styling all default Bootstrap 5 components Cartzilla
+                        introduces lots of new flexible, customizable and reusable elements you can use across the
+                        website.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?mobile" width="90" alt="Mobile Friendly icon">
+                    <h6>Mobile Friendly Interface</h6>
+                    <p class="fs-ms text-muted mb-0">It's not a surprise that nowadays over 70% of users shop online
+                        using their mobile devices. Cartzilla is 100% responsive and optimized for small touch screens.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?google" width="90" alt="Google Fonts icon">
+                    <h6>Google Fonts</h6>
+                    <p class="fs-ms text-muted mb-0">Cartzilla uses Google fonts which are free, fast to load and of
+                        very high quality. Currently Google fonts library includes 870+ font families to choose from.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?sliders" width="90" alt="Touch icon">
+                    <h6>Touch-enabled Sliders</h6>
+                    <p class="fs-ms text-muted mb-0">In the era of touch screens it's important to ensure great user
+                        experience on handheld devices, especially when it comes to such frequently used interface
+                        component as slider.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?icons" width="90" alt="Vector icon">
+                    <h6>Vector Based HD Ready Icons</h6>
+                    <p class="fs-ms text-muted mb-0">Cartzilla is equiped with font-based icon pack to ensure that
+                        infographics and interface icons look sharp on any device with any screen resolution and pixel
+                        density.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?html" width="90" alt="HTML5 icon">
+                    <h6>W3C Valid HTML Code</h6>
+                    <p class="fs-ms text-muted mb-0">All HTML files are checked via W3C validator to ensure 100% valid
+                        code. As you probably know invalid HTML limits innovation, but Cartzilla is innovative at its
+                        core.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?javascript" width="90" alt="JavaScript icon">
+                    <h6>Future-proof JavaScript</h6>
+                    <p class="fs-ms text-muted mb-0">Cartzilla core scripts as well as all dependencies are written in
+                        vanilla JS. And now with Bootstrap 5 we finally drops jQuery and uses ES6 modules.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2"><img class="inline-block mb-3"
+                        src="https://source.unsplash.com/400x400/?documentation" width="90" alt="Documentation icon">
+                    <h6>Detailed Documentation</h6>
+                    <p class="fs-ms text-muted mb-0">Download package includes links to online documentation. It covers
+                        all crucial information about how to get started, customize template and components usage.</p>
+                </div>
+            </div>
+            <h6 class="text-center">And much more...</h6>
+        </div>
+    </div class="footer text-allign-center ">
+    <br>
+    <footer class="container my-5">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 meCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
